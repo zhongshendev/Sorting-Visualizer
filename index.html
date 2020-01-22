@@ -23,11 +23,24 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div>
-    <p>
-      Test 2
-    </p>
+  <div class="menu">
+    <ul class="nav">
+      <li onclick="makeArr()">Make New Array</li>
+      <li>
+        Change Array Size
+        <input type="range" id="sizeControl" oninput="makeArr()" min="4" max="270" step="4"/>
+      </li>
+      <li class="algoChoice" onclick="updateAlgo('Quick Sort')">Quick Sort</li>
+      <li class="algoChoice" onclick="updateAlgo('Merge Sort')">Merge Sort</li>
+      <li class="algoChoice" onclick="updateAlgo('Heap Sort')">Heap Sort</li>
+      <li class="algoChoice" onclick="updateAlgo('Insertion Sort')">Insertion Sort</li>
+      <li class="algoChoice" onclick="sort()">Sort-></li>
+    </ul>
   </div>
+
+  <div id="canvas">
+  </div>
+<!-- End of Content-->
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

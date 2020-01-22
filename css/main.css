@@ -13,6 +13,7 @@
 
 html {
   color: #222;
+  background-color: #ddd;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -263,3 +264,52 @@ textarea {
   }
 }
 
+/******************************************************************************/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  display: inline-block;
+}
+
+li {
+  float: left;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 110%;
+}
+
+html {
+  text-align: center;
+}
+
+.nav {
+  background-color: #154360;
+  display: inline-block;
+  border: none;
+}
+
+.nav li {
+  color: white;
+  background-color: #154360;
+  cursor: pointer;
+}
+
+.active {
+  color: #EE82EE !important;
+}
+
+.red {
+  color: red !important;
+}
+
+.menu {
+  text-align: center;
+  background-color: #154360;
+}
